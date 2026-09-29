@@ -1,54 +1,8 @@
 
 
-  <div class="main-card">
-    <div class="header-section">
-      <span class="app-tag">Geocoding API Explorer</span>
-      <div class="profile-box">
-        <div class="name">Maulina Khamidah</div>
-        <div class="nim">20240140221</div>
-      </div>
-    </div>
-
-    <div class="search-wrapper">
-      <div class="search-box">
-        <input type="text" id="inputLokasi" placeholder="Masukkan nama lokasi (contoh: Sleman, Jakarta)..." value="Sleman" onkeypress="handleKeyPress(event)">
-        <button id="btnCari" onclick="cariLokasi()">Cari</button>
-      </div>
-    </div>
-
-    <div id="errorBox" class="error-box" style="display: none;"></div>
-
-    <div class="result-section" id="resultBox" style="display: none;">
-      <div class="data-card highlight">
-        <span class="label">Input Lokasi</span>
-        <span class="value" id="resLokasi">-</span>
-      </div>
-
-      <div class="data-card">
-        <span class="label">Negara</span>
-        <span class="value" id="resNegara">-</span>
-      </div>
-
-      <div class="data-card">
-        <span class="label">Provinsi</span>
-        <span class="value" id="resProvinsi">-</span>
-      </div>
-
-      <div class="data-card">
-        <span class="label">Kecamatan / Kota</span>
-        <span class="value" id="resKecamatan">-</span>
-      </div>
-
-      <div class="coords-grid">
-        <div class="coord-box">
-          <div class="coord-label">Longitude</div>
-          <div class="coord-value" id="resLongitude">-</div>
-        </div>
-        <div class="coord-box">
-          <div class="coord-label">Latitude</div>
-          <div class="coord-value" id="resLatitude">-</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+    window.onload = () => {
+      cariLokasi();
+    };
+  </script>
+</body>
+</html>
